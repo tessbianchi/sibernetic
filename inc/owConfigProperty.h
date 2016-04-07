@@ -153,6 +153,7 @@ public:
 			}
 			if( strTemp.find("logstep=") == 0 ){
 				logStep = ::atoi(strTemp.substr(strTemp.find('=')+1).c_str());
+				std::cout <<"LOG_STEP IS: " << logStep << std::endl;
 				if(logStep < 1)
 					throw std::runtime_error("logStep could not be less than 1 check input parameters");
 			}
